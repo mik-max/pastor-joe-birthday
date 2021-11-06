@@ -664,6 +664,12 @@ input.amount {
      .account-detail{
           font-size: 14px;
      }
+     .payment-info{
+          font-size: 17px;
+     }
+     .kingspay{
+          font-size: 17px;
+     }
 }
 /* For Mobile Landscape View */
 @media screen and (max-device-width: 640px) and (orientation: Landscape){

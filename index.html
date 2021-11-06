@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+          <link rel="stylesheet" href="linearicons/fonts.css">
+          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+          <link rel="stylesheet" href="CSS/birthday.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+          <script src="JS/index.js"></script>
+          <title>Pastor Joe</title>
+     </head>
+     <body>
+          <section id="landingSection" class="p-3 landing">
+               <nav class="navbar navbar-expand-sm "id="myScrollspy">
+                    <a href="#" class="brand">
+                         <img src="Images/pastorJoe9.jpg" alt="" class="rounded-circle" id="nav-icon-img">
+                    </a>
+               </nav>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-2"></div><!--For space-->
+                         <div class="col-md-8 intro-content">
+                              <h3 class="header-text text-center text-white">Happy Birthday Pastor Joe Agbaje</h3>
+                              <p class="intro-text text-center text-secondary sub-header">Words cannot adequately express our love and gratitude to you Sir.
+                               <br/><b class="typewriter">#VISION25 - November 25</b></p>
+                              <div class="landing-btn text-center">
+                                   <a href="#birthdayChallenge" class="btn outline-btns mb-3 challenge-btn shadow-none"><span><i class="fa fa-rocket" aria-hidden="true"></i></span> Birthday Challenge</a>
+                                   <a href="#shareComments" class="btn animate-btn btn-warning mb-3 shout-out-btn shadow-none"><span><i class="fa fa-bullhorn" aria-hidden="true"></i></span> Shout Out Moments</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2"></div><!--For space-->
+                    </div>
+               </div>
+               <div class="float-btn border rounded-circle">
+                    <a href="#landingSection" id="angleUpLink">
+                         <span class="angle-up"><i class="fa fa-angle-up"></i></span>
+                    </a>
+               </div>
+          </section>
+          <section id="birthdayChallenge" class="mt-3">
+               <img src="Images/athelete.jpg" alt="" class="challenge-img" id="birthdayContestImg">
+               <div class="challenge-content p-5" data-aos="zoom-in">
+                    <h4 class="challenge-header text-center">Birthday Challenge!</h4>
+                    <p class="p-1 text-center">Join the pastor Joe Birthday challenge today by uploading pictures and videos of yourself and loved ones wishishing pastor a happy birthday celebration. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, esse!</p>
+                    <button class="btn outline-btns shadow-none" data-toggle="modal" data-target="#challengeModal"><span><i class="fa fa-rocket" aria-hidden="true"></i></span> Participate Now</button>
+               </div>
+               <div class="modal fade" id="challengeModal">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                         <div class="modal-content ">
+                    
+                              <!-- Modal Header -->
+                              <div class="modal-header modal-header-backgroung text-center">
+                                   <h4 class="modal-title text-center text-white">Birthday Challenge</h4>
+                              </div>
+                         
+                              <!-- Modal body -->
+                              <div class="modal-body modal-body-challenge">
+                                   <form action="" class="form" id="fiesta-form">
+                                        <div class="container">
+                                             <h5 class=" text-center upload-text">Participate in the challenge</h5>
+                                             <p class="text-center upload-text">You are required to upload a file for the challenge</p>
+                                             <div class="alert alert-dismissible" id="challenge1-alert"></div>
+                                             <div class="form-group row" id="title-div">
+                                                  <label for="title" class="col-sm-3 col-form-label">Title</label>
+                                                  <div class="col-sm-9">
+                                                       <select name="" id="title" class="form-control">
+                                                            <option value="" class="form-control">Select title</option>
+                                                            <option value="Pastor" class="form-control">Pastor</option>
+                                                            <option value="Deacon" class="form-control">Deacon</option>
+                                                            <option value="Deaconess" class="form-control">Deaconess</option>
+                                                            <option value="Brother" class="form-control">Brother</option>
+                                                            <option value="Sister" class="form-control">Sister</option>
+                                                       </select>
+                                                  </div>
+                                             </div>
+                                             <div class="form-group row">
+                                                  <label for="name" class="col-sm-3 col-form-label">Name</label>
+                                                  <div class="col-sm-9">
+                                                       <input type="text" class="form-control" name="name" id="userName" placeholder="Your full name" required>
+                                                  </div>
+                                             </div>
+                                           
+                                             <div class="form-group row">
+                                                  <label for="number" class="col-sm-3 col-form-label">phone</label>
+                                                  <div class="col-sm-9">
+                                                       <input type="number" class="form-control numbers" placeholder="" id = "number" required>
+                                                  </div>
+                                             </div>
+                                             <div class="form-group row">
+                                                  <label for="church" class="col-sm-3 col-form-label">Church</label>
+                                                 <div class="col-sm-9">
+                                                  <select type="text" class="form-control" placeholder="Name of your church" id="church1" required>
+                                                       <option value="" class="form-control">Select church</option>
+                                                  </select>
+                                                 </div>
+                                             </div>
+                                             <div class="form-group row mt-4">
+                                                  <label for="file" class="col-sm-3 col-form-label">&nbsp;</label>
+                                                  <div class="col-sm-9">
+                                                       <input type="file" class="form-group form-control" accept=".jpeg, .png, .jpg, .mpeg, .mp4 .mp3" multiple id="uploads">
+                                                  </div>
+                                             </div>
+                                             <div class="form-group row mt-4">
+                                                  <label for="submit" class="col-sm-3 col-form-label">&nbsp;</label>
+                                                  <div class="col-sm-9">
+                                                       <button type="submit" class=" btn animate-btn btn-block" id ="upload-btn" 
+                                                       > Upload <span><i class="fa fa-upload" aria-hidden="true"></i></span></button>
+                                                  </div>
+                                             </div>
+
+                                        </div>
+                                        
+                                   </form>
+                                   
+                              </div>
+                         
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                   <button class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+                              </div>
+                    
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="shareComments" class="share-comments px-3">
+               <div class="container-fluid">
+                    <div class="row"> 
+                         <div class="col-md-2">
+                              <!-- <p class="text-secondary sub-header typewriter text-center">comments on Pastor Joe Agbaje</p> -->
+                         </div><!--For space-->
+                         <div class="div col-md-8 mt-2 mb-2">
+                              <h4 class="text-center text-white shout-out">Shout Out Moments</h4>
+                         </div>
+                         <div class="col-md-2"></div><!--For space-->
+                         <div class="col-md-2"></div><!--For space-->
+                         <div class="col-md-8 shout-btn-div text-center">
+                              <a href="https://getdp.co" target="_blank" class="btn animate-btn btn-warning mb-3 avatar shadow-none"><span><i class="fa fa-picture-o" aria-hidden="true"></i></span> Create Avatar</a>
+                              <button class="btn outline-btns mb-3 comment shadow-none" data-toggle="modal" data-target="#shoutOutModal"><span><i class="fa fa-bullhorn" aria-hidden="true"></i></span> Shout Out</button>
+                         </div>
+                         <div class="col-md-2"></div><!--For space-->
+                    </div>
+               </div>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 text-white text-center">
+                              <div class="item text-center" id="comment-div">
+                                   <!-- <p class="text-white">
+                                       <i class="icon-quote-open"></i><br>
+                                       Happy birthday to a rare gem, a passionate soul winner. Your light shines everywhere and your impact and results are impeccable and supernatural. You personify ministry, loyalty, humility, purity, passion, to mention a few. Thank you for answering God's call upon your life, as millions of lives have been positively impacted by that decision. I love you dearly sir. 
+                                   </p>
+                                   <img src="Images/PSTJOE.jpg"  alt="" class="img-fluid rounded-circle">
+                                   <h5 class="text-center text-white">Pastor Jonathan Asine</h5>
+                                   <div class="text-center text-white">
+                                       <i class="icon-star"></i>
+                                       <i class="icon-star"></i>
+                                       <i class="icon-star"></i>
+                                       <i class="icon-star"></i>
+                                       <i class="icon-star-half"></i>
+                                   </div> -->
+                               </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="modal fade" id="shoutOutModal">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                         <div class="modal-content ">
+                    
+                              <!-- Modal Header -->
+                              <div class="modal-header modal-header-backgroung text-center">
+                                   <h4 class="modal-title text-center text-white">Shout Out Moments </h4>
+                              </div>
+                         
+                              <!-- Modal body -->
+                              <div class="modal-body p-4">
+                                   <form action="" class="form" id="fiesta-form">
+                                        <h5 class=" text-center upload-text">Share your birthday wishes</h5>
+                                        <div class="alert alert-dismissible" id="shoutOutAlert"></div>
+                                        <div class="form-group row" id="title-div2">
+                                             <label for="title" class="col-sm-3 col-form-label">Title</label>
+                                             <div class="col-sm-9">
+                                                  <select name="" id="title2" class="form-control">
+                                                       <option value="" class="form-control">Select title</option>
+                                                       <option value="Pastor" class="form-control">Pastor</option>
+                                                       <option value="Deacon" class="form-control">Deacon</option>
+                                                       <option value="Deaconess" class="form-control">Deaconess</option>
+                                                       <option value="Brother" class="form-control">Brother</option>
+                                                       <option value="Sister" class="form-control">Sister</option>
+                                                  </select>
+                                             </div>
+                                        </div>
+                                        <div class="form-group row">
+                                             <label for="name" class="col-sm-3 col-form-label">Name</label>
+                                            <div class="col-sm-9">
+                                             <input type="text" class="form-control" name="name" id="userName2" placeholder="Your full name" required>
+                                            </div>
+                                        </div>
+                                      
+                                        <!-- <div class="form-group">
+                                             <label for="group">phone</label>
+                                             <input type="number" class="form-control" placeholder="Your phone number" id = "number2" required>
+                                        </div> -->
+                                        <div class="form-group row">
+                                             <label for="church" class="col-sm-3 col-form-label">Church</label>
+                                             <div class="col-sm-9">
+                                                  <select type="text" class="form-control churches" placeholder="Name of your church" id="church2" required>
+                                                       <option value="" class="form-control">Select church</option>
+                                                  </select>
+                                             </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="textarea" class="col-sm-3 col-form-label">Comments</label>
+                                            <div class="col-sm-9">
+                                             <textarea class="form-control" name="comments" id="comments" cols="30" rows="8" placeholder="share your thoughts"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                             <label for="avatar" class="col-sm-3 col-form-label">&nbsp;</label>
+                                            <div class="col-sm-9">
+                                             <input type="file" class="form-group form-control" accept=".jpeg, .png, .jpg, .mpeg, .mp4" multiple id="uploads2" placeholder="Upload birthday avatar">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                             <label for="submit" class="col-sm-3 col-form-label">&nbsp;</label>
+                                             <div class="col-sm-9">
+                                                  <button type="submit" class=" btn animate-btn btn-block" id ="upload-btn2">Upload <span><i class="fa fa-upload" aria-hidden="true"></i></span></button>
+                                             </div>
+                                         </div>
+                                        
+                                   </form>
+                                   
+                              </div>
+                         
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                   <button class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+                              </div>
+                    
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="giftPastor" class="gift-pastor ">
+               <div class="container-fluid">
+                    <div class="row">
+                         <img src="Images/giftbox1.png" alt="" class="col-md-6 " id="giftImg">
+                         <div class="col-md-6 gift-content p-5">
+                              <h4 class="challenge-header text-center">Gift Pastor</h4>
+                              <p class="p-1 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore nisi eos molestias, laboriosam cumque quis, suscipit expedita officia inventore libero fugiat mollitia asperiores assumenda modi, animi aspernatur</p>
+                              <button class="btn outline-btns shadow-none" data-toggle="modal" data-target="#giftModal"><span><i class="fa fa-gift" aria-hidden="true"></i></span> Gift Pastor</button>
+                         </div>
+                    </div>
+               </div>
+               <div class="modal fade" id="giftModal">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                         <div class="modal-content ">
+                    
+                              <!-- Modal Header -->
+                              <div class="modal-header modal-header-backgroung text-center">
+                                   <h4 class="modal-title text-center text-white">Gift Pastor</h4>
+                              </div>
+                         
+                              <!-- Modal body -->
+                              <div class="modal-body p-4">
+                                  
+                                   <h4 class="text-center upload-text">Gift pastor on his special day</h4>
+                                   <div class="alert alert-dismissible" id="gift-alert"></div>
+
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-md-12 payment-info text-primary p-3 mb-2">Kindly Make Payment via any of the Channels Below.</div>
+                                        </div>
+                                   </div>
+                                   <a href="https://kingspayweb.com/quickpay/celz4" target="_blank" class="btn btn-block btn-primary mb-2" id="cardPayment"><span><i class="fa fa-cc-mastercard" aria-hidden="true"></i></span> <span><i class="fa fa-cc-visa" aria-hidden="true"></i></span> Pay with card via kingspay</a>
+
+                                   <div id="accordion" >
+                                       
+                                        <div class="card mb-2">
+                                             <div class="card-header" data-toggle="collapse" data-target="#collapseTwo">
+                                                  <a class=" card-link collapse-title collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                       <i class="icon-Bank"></i> Pay to Bank (Bank Transfer)
+                                                  </a>
+                                             </div>
+                                             <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                  <div class="card-body">
+                                                       <ul class="nav nav-tabs" role="tablist">
+                                                            <li class="nav-item">
+                                                              <a class="nav-link active tab-link" data-toggle="tab" href="#giveNow">Give</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                              <a class="nav-link tab-link" data-toggle="tab" href="#confirmPayment">Confirm Payment</a>
+                                                            </li>
+                                                       </ul>
+                                                       <div class="tab-content"><br/>
+                                                            <div class="tab-pane active" id="giveNow">
+                                                                 <form class="form" id="pledge-form">
+                                                                      <div class="container">
+                                                                           <div class="form-group row">
+                                                                                <label for="name" class="col-sm-3 col-form-label">Name</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <input type="text" class="form-control mb-1" id="plname" placeholder="Enter names" name="name" required>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="form-group row">
+                                                                                <label for="number" class="col-sm-3 col-form-label">Phone</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <input type="number" class="form-control mb-1 numbers" id="plnumber" placeholder="" required>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="form-group row">
+                                                                                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <input type="email" class="form-control mb-1" id="plemail" placeholder="Enter email" required>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="form-group row">
+                                                                                <label for="" class="col-sm-3 col-form-label">Amount</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <div class="input-group">
+                                                                                          <div class="input-group-prepend">
+                                                                                          <select id="selectoption1" class="form-control selectoption shadow-none">
+                                                                                               <option value="" class="form-control">currency</option>
+                                                                                               <option class="form-control" value="NGN">NGN</option>
+                                                                                               <option class="form-control" value="USD">USD</option>
+                                                                                               <option class="form-control" value="GBP">GBP</option>
+                                                                                          </select> 
+                                                                                          <input type="number" class="form-control  amount shadow-none" id="amount" placeholder="Enter Amount" name="num" required>
+                                                                                          </div>
+                                                                                     </div>
+                                                                                </div>
+                                                                                
+                                                                           </div>
+                                                                           <div class="form-group row">
+                                                                                <label class="col-sm-3 col-form-label">&nbsp;</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <button class="btn btn-block outline-btns shadow-none mt-2" id="giftBtn">Gift pastor now</button>
+                                                                                </div>
+                                                                           </div> 
+                                                                           <p id="payCode"></p>
+                                                                      </div>
+                                                                      
+                                                                 </form>
+                                                                 <hr />
+                                                                 <em class="upload-text text-center">Kindly attach the payment code in your transaction narration for easy reconciliation</em>
+                                                                 <div class="bank-details mt-2" id="bankDetails" hidden>
+                                                                      <table>
+                                                                           <tr>
+                                                                                <td class="account-title"><b>Bank Name:</b></td>
+                                                                                <td class="account-detail">Parallex Microfinance Bank</td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                <td class="account-title"><b>Account Name:</b></td>
+                                                                                <td class="account-detail">Christ Embassy</td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                <td class="account-title"><b>Account Number:</b></td>
+                                                                                <td class="account-detail">2030070986</td>
+                                                                           </tr>
+                                                                      </table>
+                                                                      <!--     -->
+               
+                                                                 </div>
+                                                            </div>
+                                                            <div id="confirmPayment" class="tab-pane">
+                                                                 <div class="container p-3">
+                                                                      <input type="text" class="form-control mb-4" placeholder="Enter payment code">
+                                                                      <button class="btn btn-block outline-btns">Submit</button>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                      
+                                   </div>
+                                   
+                                   
+                              </div>
+                         
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                   <button class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+                              </div>
+                    
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="gallery-cont" class="py-3">
+               <div class="container">
+                    <h4 class="text-center text-white shout-out">Sharing Memories...</h4>
+               </div>
+               <div class="gallery tiles">
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe9.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>    
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe5.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe3.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe1.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe2.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe6.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe7.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                    <div class="gallery-item tile">
+                        <img src="Images/pastorJoe8.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                    <div class="gallery-item tile" alt="" class="gallery-image">
+                         <img src="Images/pastorJoe4.jpg" alt="" class="gallery-image">
+                        <div class="details"><span class="title">Lorem Ipsum Dolor</span><span class="info">Quisque vel felis lectus donec vitae dapibus magna</span></div>
+                    </div>
+                </div>
+                <!-- The Modal -->
+                <div id="imgModal" class="modal">
+        
+                    <!-- The Close Button -->
+                    <span class="img-close text-white">&times;</span>
+               
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content img-modal-content" id="img01">
+               
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+          </section>
+          <section id="feedAChild">
+               <img src="Images/inner-city.jpg" alt="" class="feed-child" id="feedAChildChallenge">
+               <div class="challenge-content p-5">
+                    <h4 class="challenge-header text-center">Feed A Child Today!</h4>
+                    <p class="p-1 text-center">Join the pastor Joe Birthday challenge today by uploading pictures and videos of yourself and loved ones wishishing pastor a happy birthday celebration. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, esse!</p>
+                    <button class="btn outline-btns shadow-none" data-toggle="modal" data-target="#sponsorModal"><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span> Sponsor Now</button>
+               </div>
+
+               <div class="modal fade" id="sponsorModal">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                         <div class="modal-content ">
+                    
+                              <!-- Modal Header -->
+                              <div class="modal-header modal-header-backgroung text-center">
+                                   <h4 class="modal-title text-center text-white">Feed A Child Today</h4>
+                              </div>
+                         
+                              <!-- Modal body -->
+                              <div class="modal-body p-4">
+                                  
+                                   <h4 class="text-center upload-text">Help in reaching out to indigent children with food</h4>
+                                   <div class="alert alert-dismissible" id="sponsor-alert"></div>
+
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-md-12 payment-info text-primary p-3 mb-2">Kindly Make Payment via any of the Channels Below.</div>
+                                        </div>
+                                   </div>
+                                   <a href="https://kingspayweb.com/quickpay/celz4" target="_blank" class="btn btn-block btn-primary mb-2" id="cardPayment"><span><i class="fa fa-cc-mastercard" aria-hidden="true"></i></span> <span><i class="fa fa-cc-visa" aria-hidden="true"></i></span> Pay with card via kingspay</a>
+
+                                   <div id="accordion" >
+                                       
+                                        <div class="card mb-2">
+                                             <div class="card-header" data-toggle="collapse" data-target="#collapseTwo">
+                                                  <a class=" card-link collapse-title collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                       <i class="icon-Bank"></i> Pay to Bank (Bank Transfer)
+                                                  </a>
+                                             </div>
+                                             <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                  <div class="card-body">
+                                                       <ul class="nav nav-tabs" role="tablist">
+                                                            <li class="nav-item">
+                                                              <a class="nav-link active tab-link" data-toggle="tab" href="#giveNow2">sponsor</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                              <a class="nav-link tab-link" data-toggle="tab" href="#confirmPayment2">Confirm Payment</a>
+                                                            </li>
+                                                       </ul>
+                                                       <div class="tab-content"><br/>
+                                                            <div class="tab-pane active" id="giveNow2">
+                                                                 <form class="form" id="pledge-form">
+                                                                      <div class="container">
+                                                                           <div class="form-group row">
+                                                                                <label for="name" class="col-sm-3 col-form-label">Name</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <input type="text" class="form-control mb-1" id="spon-name" placeholder="Enter names" name="name" required>
+                                                                                </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                <label for="number" class="col-sm-3 col-form-label">Phone</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <input type="number" class="form-control mb-1 numbers" id="spon-number" placeholder="" required>
+                                                                                </div>
+                                                                                </div>
+                                                                           <div class="form-group row">
+                                                                                <label for="email" class="col-sm-3 col-form-label">Email</label>
+                                                                                <div class="col-sm-9">
+                                                                                <input type="email" class="form-control mb-1" id="spon-mail" placeholder="Enter email" required>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="form-group row">
+                                                                                <label for="" class="col-sm-3 col-form-label">Amount</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <div class="input-group">
+                                                                                          <div class="input-group-prepend">
+                                                                                          <select id="selectoption2" class="form-control shadow-none selectoption">
+                                                                                               <option class="form-control ">NGN</option>
+                                                                                               <option class="form-control ">USD</option>
+                                                                                               <option class="form-control ">GBP</option>
+                                                                                          </select> 
+                                                                                          <input type="number" class="form-control amount shadow-none" id="spon-amount" placeholder="Enter Amount" name="num" required>
+                                                                                          </div>
+                                                                                     </div>
+                                                                                </div>
+                                                                                
+                                                                           </div>
+                                                                           <div class="form-group row">
+                                                                                <label class="col-sm-3 col-form-label">&nbsp;</label>
+                                                                                <div class="col-sm-9">
+                                                                                     <button class="btn btn-block outline-btns mt-2" id="sponsorBtn">sponsor now</button>
+                                                                                </div>
+                                                                           </div> 
+                                                                           <p id="payCode2"></p>
+                                                                      </div>
+                                                                      
+                                                                 </form>
+                                                                 <hr />
+                                                                 <em class="upload-text text-center">Kindly attach the payment code in your transaction narration for easy reconciliation</em>
+                                                                 <div class="bank-details mt-2" id="bankDetails2" hidden>
+                                                                      <table>
+                                                                           <tr>
+                                                                                <td class="account-title"><b>Bank Name:</b></td>
+                                                                                <td class="account-detail">Parallex Microfinance Bank</td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                <td class="account-title"><b>Account Name:</b></td>
+                                                                                <td class="account-detail">Christ Embassy</td>
+                                                                           </tr>
+                                                                           <tr>
+                                                                                <td class="account-title"><b>Account Number:</b></td>
+                                                                                <td class="account-detail">2030070986</td>
+                                                                           </tr>
+                                                                      </table>
+                                                                      <!--     -->
+               
+                                                                 </div>
+                                                            </div>
+                                                            <div id="confirmPayment2" class="tab-pane">
+                                                                 <div class="container p-3">
+                                                                      <input type="text" class="form-control mb-4" placeholder="Enter payment code">
+                                                                      <button class="btn btn-block outline-btns">Submit</button>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                      
+                                   </div>
+                                   
+                                   
+                              </div>
+                         
+                              <!-- Modal footer -->
+                              <div class="modal-footer">
+                                   <button class="btn btn-secondary close-btn" data-dismiss="modal">Close</button>
+                              </div>
+                    
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="footer" class="p-3">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-5 mt-3">
+                              <h5 class="text-white copywrite">
+                                   <span><i class="fa fa-copyright" aria-hidden="true"></i></span> 
+                                   Copyright 2021 CELZ4 New Media. All Rights resreved
+                              </h5>
+                              
+                         </div>
+                         <div class="col-md-2"></div><!--For Space-->
+                         <div class="col-md-5 support mt-3">
+                              <p class="text-white contact"><b>Contact us via</b>: <span><i class="fa fa-phone" aria-hidden="true"></i> <i style="font-size: 14px;">+2347039370314, +2348026691295</i></span> <span><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:example@gmail.com" class="text-white"> example@gmail.com</a></span></p>
+                              <p>
+                                   <a href="adminIndex.html" target="_blank" class=" btn animate-btn admin">Admin Portal</a>
+                              </p>
+                         </div>
+                    </div>
+               </div>
+               
+               
+          </section>
+     </body>   
+</html>

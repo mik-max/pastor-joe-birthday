@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function(){
                comments:[
                     "To my Father，Life Coach, Mentor，Role model.... The words in English vocabulary are not enough to express the joy in my heart today as I tag along Host of Heaven to celebrate you. Thank You immensely for been a wonderful father. Happy Birthday to you Sir."
                ],
-               avatar: "Images/past8.png"
+               avatar: "Images/Past8.png"
           },
           {
                title: "Brother",
@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function(){
                comments:[
                     "Happy birthday celebration to my Daddy and Friend. I'm happy to be celebrating you! Thanks for being a great friend and loving father, I love you so much!!!"
                ],
-               avatar: "Images/past2.jpeg"
+               avatar: "Images/Past2.jpeg"
           },
           {
                title: "Pastor",
@@ -427,7 +427,7 @@ document.addEventListener("DOMContentLoaded", function(){
                comments:[
                     "Happy Birthday to our miracle Worker, a reality Evangelist, A man sent from God, a burning and a Shinning Light, an exemplary Leader and a Blessing to all. Pastor, we love you Sir! Happy Birthday!!!"
                ],
-               avatar: "Images/past7.jpg"
+               avatar: "Images/Past7.jpg"
           },
           {
                title: "Pastor",
@@ -435,7 +435,7 @@ document.addEventListener("DOMContentLoaded", function(){
                comments:[
                     "Happy supernatural birthday to my father, mentor, coach, teacher, pastor and Boss. Thank you pastor Sir for your unconditional love for me and guiding me in the right path to go. You gave my life a meaning. I learnt alot working beside you as member of Petramultimedia. Thank you so much sir for your investment in my life. I love you forever sir!!!"
                ],
-               avatar: "Images/past3.jpeg"
+               avatar: "Images/Past3.jpeg"
           },
      ]
      let count = 0;

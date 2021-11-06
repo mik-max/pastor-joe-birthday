@@ -411,7 +411,7 @@ document.addEventListener("DOMContentLoaded", function(){
                comments:[
                     "To my Father，Life Coach, Mentor，Role model.... The words in English vocabulary are not enough to express the joy in my heart today as I tag along Host of Heaven to celebrate you. Thank You immensely for been a wonderful father. Happy Birthday to you Sir."
                ],
-               avatar: "Images/Past8.png"
+               avatar: "Images/Past8.PNG"
           },
           {
                title: "Brother",

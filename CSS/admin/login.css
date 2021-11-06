@@ -14,7 +14,7 @@ a, a:hover {
 }
 .loginSection{
     height: 100vh;
-    background-image: url("C:/Users/Emeka Chinye/Documents/Visual Studio Code/Projects/Birthday Dashboard/images/slide12.jpg");
+    background-image: url("../Images/slide12.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(1, 27, 75, 0.938);

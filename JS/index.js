@@ -442,7 +442,7 @@ document.addEventListener("DOMContentLoaded", function(){
      function updateComments(){
           let item = document.getElementById('comment-div');
           item.innerHTML = " ";
-          let htmlContent = `
+          let htmlContent = `   
                     <div class= "animate__animated animate__zoomIn">
                          <p class="text-white">
                               <i class="icon-quote-open"></i><br>
@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function(){
                          <img src="${arrayOfComments[count].avatar}"  alt="" class="img-fluid rounded-circle">
                          <h5 class="text-center text-white">${arrayOfComments[count].title} ${arrayOfComments[count].name}</h5>
                     </div>
-          `
+          `  
           count++;
           item.insertAdjacentHTML( "afterbegin",htmlContent);
           if(count == arrayOfComments.length){
@@ -550,6 +550,13 @@ document.addEventListener("DOMContentLoaded", function(){
                },
           });
      }
+     function getCurrentDate(){
+          let date = new Date();
+          const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+          let monthName = month[date.getMonth()];
+          let day = date.getDay();
+          return [monthName, day]
+     }
      document.getElementById('uploads').addEventListener('change', imageUploaded);
      let challengeNumber = document.getElementById('number')
      $('#upload-btn').click(function(e){
@@ -561,49 +568,53 @@ document.addEventListener("DOMContentLoaded", function(){
           birthdayChallenge.church = document.querySelector('#church1').value;
           birthdayChallenge.base64File = displayString();
           birthdayChallenge.fileType = displayType();
+          birthdayChallenge.uploadDate = getCurrentDate();
           console.log(birthdayChallenge);
-         /*  $.ajax({
+          /* $.ajax({
                url: 'https://first-react-app-bb5b8-default-rtdb.firebaseio.com/challengers.json',
                type: 'POST',
                dataType: 'json',
                cache: false,
-               data: { 'sponsor': birthdayChallenge },
-               success: function (data) {
-                   if (data.status == 'Successful') {
-                       document.getElementById('challenge1-alert').classList.remove('alert-danger');
-                       document.getElementById('challenge1-alert').classList.add('alert-success');
-                   } else {
-                       document.getElementById('challenge1-alert').classList.remove('alert-success');
-                       document.getElementById('challenge1-alert').classList.add('alert-danger');
-      
-                   }
-                   document.getElementById('challenge1-alert').innerText = data.message;
-                   clearBirthdayChallengeForm();
+               headers: {
+                    'content-Type': 'application/json'
                },
+               data: JSON.stringify(birthdayChallenge),
       
-           }); */
-
-               fetch('https://first-react-app-bb5b8-default-rtdb.firebaseio.com/challengers.json', {
-                   method: 'POST',
-                   body: JSON.stringify(birthdayChallenge),
-                   headers: {
-                       'content-Type': 'application/json'
-                   }
-               }).then((data)=> {
-                    if (!data.ok) {
-                         throw Error(data.status);
-                    }else{
-                         document.getElementById('challenge1-alert').classList.remove('alert-danger');
-                         document.getElementById('challenge1-alert').classList.add('alert-success');
-                         document.getElementById('challenge1-alert').innerText = data.statusText;
-                         clearBirthdayChallengeForm();
-                    }
-               })
-               .catch((data)=>{
+           }).done(postContent);
+           function postContent(data){
+               if (data.ok) {
+                    document.getElementById('challenge1-alert').classList.remove('alert-danger');
+                    document.getElementById('challenge1-alert').classList.add('alert-success');
+                } else {
                     document.getElementById('challenge1-alert').classList.remove('alert-success');
                     document.getElementById('challenge1-alert').classList.add('alert-danger');
+   
+                }
+                document.getElementById('challenge1-alert').innerText = data.statusText;
+                clearBirthdayChallengeForm();
+           } */
+
+          fetch('https://first-react-app-bb5b8-default-rtdb.firebaseio.com/challengers.json', {
+               method: 'POST',
+               body: JSON.stringify(birthdayChallenge),
+               headers: {
+                    'content-Type': 'application/json'
+               }
+          }).then((data)=> {
+               if (!data.ok) {
+                    throw Error(data.status);
+               }else{
+                    document.getElementById('challenge1-alert').classList.remove('alert-danger');
+                    document.getElementById('challenge1-alert').classList.add('alert-success');
                     document.getElementById('challenge1-alert').innerText = data.statusText;
-               });
+                    clearBirthdayChallengeForm();
+               }
+          })
+          .catch((data)=>{
+               document.getElementById('challenge1-alert').classList.remove('alert-success');
+               document.getElementById('challenge1-alert').classList.add('alert-danger');
+               document.getElementById('challenge1-alert').innerText = data.statusText;
+          });
 
                
 

@@ -367,7 +367,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     element.onclick = function(){
                          modal.style.display = "block"; 
                          modalImg.src = this.src;
-                         captionText.innerHTML = 'Uploaded by me'; //this.alt;
+                         captionText.innerHTML = '#VISION25 #CELZ4'; //this.alt;
                     }
                });
           
@@ -557,7 +557,7 @@ document.addEventListener("DOMContentLoaded", function(){
           let day = date.getDay();
           return [monthName, day]
      }
-     document.getElementById('uploads').addEventListener('change', imageUploaded);
+     document.getElementById('uploads').addEventListener('change', imageUploaded); 
      let challengeNumber = document.getElementById('number')
      $('#upload-btn').click(function(e){
           e.preventDefault();

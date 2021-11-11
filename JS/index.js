@@ -564,6 +564,7 @@ document.addEventListener("DOMContentLoaded", function(){
           let birthdayChallenge = {};
           birthdayChallenge.title = document.querySelector('#title').value;
           birthdayChallenge.name = document.querySelector('#userName').value;
+          birthdayChallenge.userName = document.querySelector('#challUserName').value;
           birthdayChallenge.phoneNumber = document.querySelector('#number').value;
           birthdayChallenge.church = document.querySelector('#church1').value;
           birthdayChallenge.base64File = displayString();
@@ -627,6 +628,7 @@ document.addEventListener("DOMContentLoaded", function(){
      function clearBirthdayChallengeForm(){
           document.querySelector('#title').value = "";
           document.querySelector('#userName').value = "";
+          document.querySelector('#challUserName').value = "";
           document.querySelector('#church1').value = "";  
           document.querySelector('#uploads').value = "";
      }

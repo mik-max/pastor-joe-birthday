@@ -20,6 +20,7 @@ body{
      height: 100vh;
      width: 100%;
      background-image: url("../Images/pstjoe1.jpg");
+     background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
      background-blend-mode: soft-light;
@@ -27,6 +28,7 @@ body{
      border-radius: 0% 0% 50% 0%; 
      animation: slide 1s ease-in-out infinite;
      animation-duration: 60s;
+     object-fit: cover;
 }
 
 #nav-icon-img{
@@ -280,17 +282,10 @@ input.amount {
  }
  
  .tiles {
-    
      font-size: 0;
      text-align: center;
-     /* position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%); */
    }
    .tiles .tile {
-     /* display: inline-block; */
-     /* margin: 10px;*/
      text-align: left; 
      opacity: 0.99;
      overflow: hidden;
@@ -432,10 +427,7 @@ input.amount {
    
  @media (min-width: 640px){
      .gallery{
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(5, 300px);
-         grid-auto-flow:row dense;
+          
      }
      .gallery-item{
          margin: 0rem;
